@@ -234,13 +234,13 @@ ax1.plot(populacao_i, populacao_f, ' ', color='green', marker='d', label = 'Last
 # Plot the animation
 anim = animation.FuncAnimation(fig, animate, init_func=init, 
                                frames=num_ger, interval=500, blit=True)
-ax1.legend()
+ax1.legend(loc='lower left')
 plt.show()
 # To install ffmpeg, run the following command on terminal
 # conda install -c menpo ffmpeg=3.1.3   
 
 # To save the animation, uncomment the next line
-anim.save('animation5.mp4', fps=15)
+anim.save('animation.mp4', fps=15)
 
 
 
